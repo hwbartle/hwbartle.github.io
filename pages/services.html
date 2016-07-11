@@ -1,0 +1,29 @@
+<div class="page-navigation-container">
+	<p class="page-navigation-container-text" ng-click="category = 'consult'">Management Consulting</p>
+	<p class="page-navigation-container-text" ng-click="category = 'implement'">Implementation</p>
+</div>
+
+<div class="page-content-container">
+	<div  ng-show="category == 'consult'">
+		<h2>Management Consulting</h2>
+		<p>Beruff & Company provides consulting services to companies and investors in eight critical areas of performance.  Our goal is to help create lasting value for our clients, which leads to a sustainable competitive advantage in the marketplace for talent, customers, and capital.  Our strategies are based on actual experience as business leaders and are structured to be practicable for our clients.   We act with speed, reducing time to innovation and performance improvement.  Our consulting services encompass the following areas:</p>
+		<ul>
+			<li><strong>Strategic Guidance:</strong>  Assisting with strategy formulation to create defensible competitive advantages and positions of leadership</li>
+			<li><strong>Marketing Strategy:</strong>  Optimizing product positioning, focus, value proposition, and differentiation</li>
+			<li><strong>New Product Development:</strong> Evaluating the new product pipeline to set priorities</li>
+			<li><strong>Business Development:</strong>  Structuring, and negotiating, commercial and technology agreements</li>
+			<li><strong>People:</strong>  Helping to build more effective leadership teams energized by a meaningful Mission, aspirational goals and standards</li>
+			<li><strong>Operating Leverage:</strong>  Enhancing operational performance through improved scalability, margins, and cash flow</li>
+			<li><strong>Financial Strategy:</strong>  Optimizing cash flow and capital structure</li>
+			<li><strong>Investments:</strong>  Evaluating investment opportunities; supporting due diligence reviews</li>
+		</ul>
+
+	</div>
+
+	<div  ng-show="category == 'implement'">
+		<h2>Implementation</h2>
+		<p>For a variety of reasons, sometimes clients do not wish to implement strategic recommendations with their own internal teams.  Yet, they wish to realize the potential benefits from the deployment of proposed recommendations.  When this happens, Beruff & Company will evaluate other means of implementation, including the creation of a separate entity jointly owned by the client and Beruff & Company to deploy the recommendation and realize the business potential.  As a result, Beruff & Company shares the risk with its clients.  These jointly owned entities can be re-purchased by clients at an agreed-upon formula price or sold to strategic buyers to harvest value.  Areas that are typically considered for this type of implementation include the commercialization of new products or services and the deployment of new operating models.  </p>
+	</div>
+
+</div>
+

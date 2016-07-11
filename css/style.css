@@ -1,0 +1,234 @@
+
+body{
+	font-family: arial;
+
+
+margin-left: 0px !important;
+margin-top: 0px !important;
+margin-right: 0px !important;
+margin-bottom: 0px !important;
+background-size: 100% auto !important;
+
+}
+
+html{
+	/*
+	background: linear-gradient(to bottom, rgba(255, 255, 255, 1) 0%, #e6e6e6 100%);
+	*/
+	background-color:#e6e6e6;
+}
+
+.navigation-list a:link,
+.footer a:link,
+.caseStudy_list a:link
+{
+	text-decoration: none;
+	color:black;
+}
+
+.navigation-list a:hover,
+.footer a:hover,
+.caseStudy_list a:link
+{
+	color:blue;
+}
+
+.navigation-list a:visited,
+.footer a:visited,
+.caseStudy_list a:link
+{
+    text-decoration: none;
+    color:black;
+}
+
+
+body.current-page-home
+{
+	background: url("../images/background/home.jpg") no-repeat top center;
+}
+
+body.current-page-industries
+{
+	background: url("../images/background/industries.jpg") no-repeat top center;
+}
+body.current-page-services
+{
+	background: url("../images/background/services.jpg") no-repeat;
+}
+
+body.current-page-about
+{
+	background: url("../images/background/aboutUs.jpg") no-repeat top center;
+	
+}
+body.current-page-cases
+{
+	background: url("../images/background/cases.jpg") no-repeat top center;
+	
+}
+body.current-page-contact
+{
+	background: url("../images/background/contact.jpg") no-repeat top center;
+	
+}
+body.current-page-case_detail
+{
+	background: url("../images/background/cases.jpg") no-repeat top center;
+	
+}
+
+
+/* Text */
+
+
+.header
+{
+	background: linear-gradient(to left, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 80%, #e6e6e6 100%);
+	width: 100%;
+	height: 70px;
+}
+
+.header-title
+{
+	width:450px;
+	float:left;
+	color:orange;
+}
+ul.navigation-list
+{
+	margin-top:0px
+}
+.navigation-list li
+{
+	display: inline;
+}
+
+.page-container
+{
+	margin-top:30%;
+	background: linear-gradient(to left, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 80%, #e6e6e6 100%);
+	min-height: 280px;
+}
+
+body.current-page-home .page-container
+{
+	background: transparent;
+}
+
+.content-container
+{
+	width:70%;
+	margin-left:15%;
+	margin-right:15%;
+	
+	
+
+}
+
+
+
+.footer
+{
+	background-color:  #d9d9d9;
+	bottom:0;
+	width:100%;
+
+}
+
+.current-page-home .footer,
+{
+	position:fixed; 
+	bottom:0;
+}
+
+
+
+
+/*PAGES*/
+.page-navigation-container
+{
+	width: 30%;
+	float:left;
+}
+
+.page-navigation-container-text
+{
+	cursor: pointer;
+	font-size: 0.9em;
+	margin-left: 5%
+}
+.page-navigation-container-text:hover
+{
+	color: blue;
+}
+
+.page-content-container
+{
+	width:70%;
+	float:right;
+	background-color: white;
+	min-height: 350px;
+
+
+}
+
+.page-content-container_no_nav{
+	margin-left:5px;
+	margin-right:5px;
+}
+
+.page-content-container *
+{
+	margin-right:5px;
+}
+
+
+
+
+/*Case Study Page */
+.case-study-img{
+	width:25%;
+	float:left;
+}
+
+.caseStudy_list{
+	list-style: none;
+}
+
+.caseStudy_list div{
+	padding-top: 30px;
+	padding-left: 30%;
+}
+
+.caseStudy_list li
+{
+	height:130px;
+	margin-bottom: 10px;
+}
+
+
+
+.clearfix:after {
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+}
+
+.clearfix {
+    display: inline-block;
+}
+
+html[xmlns] .clearfix {
+    display: block;
+}
+
+* html .clearfix {
+    height: 1%;
+}
+
+
+
+

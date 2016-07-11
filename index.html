@@ -1,0 +1,82 @@
+<html >
+
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<meta name="robots" content="noindex, nofollow">
+	<meta name="googlebot" content="noindex, nofollow">
+	<script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/angular.js/1.1.1/angular.min.js"></script>
+	<script type="text/javascript" src="https://code.jquery.com/jquery-3.0.0.min.js"></script>
+	
+
+	<style type="text/css">@charset "UTF-8";[ng\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak{display:none;}ng\:form{display:block;}</style>
+	
+
+	</style>
+	<title>Beruff & Company, Inc.</title>
+
+	<script type="text/javascript" src="js/app.js">//<![CDATA[
+	</script>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+
+</head>
+
+	<body   ng-app="beruffCompanyApp" 
+			class="ng-scope" 
+			ng-class="{
+				'current-page-home' : activePage == 'home',
+				'current-page-industries' : activePage == 'industries',
+				'current-page-services' : activePage == 'services',
+				'current-page-about' : activePage == 'about',
+				'current-page-cases' : activePage == 'cases',
+				'current-page-contact' : activePage == 'contact',
+				'current-page-case_detail' : activePage == 'case_detail'
+			}">
+		<!-- HEADER START 
+			<div class="header">
+				<a href="#/home"><h1 class="header-title"> BERUFF & COMPANY, INC. </h1> </a>
+				<ul class="navigation-list">
+					<li><a href="#/contact">Contact</a></li>
+					<li><a href="#/about">About</a></li>
+					<li><a href="#/home">Home</a></li>
+					<li><a href="#/industries">Industries</a></li>
+					<li><a href="#/cases">Case Studies</a></li>
+					<li><a href="#/services">Services</a></li>
+				</ul>
+
+			</div>
+			<!-- HEADER END -->
+
+		<div class="content-container clearfix">
+
+		<div class="header">
+				<a href="#/home"><h1 class="header-title"> BERUFF & COMPANY, INC. </h1> </a>
+				<ul class="navigation-list">
+					<li><a href="#/contact">Contact</a></li>
+					<li><a href="#/about">About</a></li>
+					<li><a href="#/home">Home</a></li>
+					<li><a href="#/industries">Industries</a></li>
+					<li><a href="#/cases">Case Studies</a></li>
+					<li><a href="#/services">Services</a></li>
+				</ul>
+
+			</div>
+
+
+
+
+			<div class="page-container clearfix" ng-view=""></div>
+
+		</div>
+
+		<!-- FOOTER START -->
+		<div class="footer">
+			<a href="">Terms of Use</a>
+			<a href="">Copyright</a>
+
+		</div>
+		<!-- FOOTER END -->
+	</body>
+</html>
+
+
