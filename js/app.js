@@ -31,8 +31,8 @@ angular.module('beruffCompanyApp')
 
 angular.module('beruffCompanyApp')
 .controller('StudyController', function ($scope, $rootScope, $log, $routeParams) {
-	$rootScope.activePage = 'case_detail';
-	//$scope.study_index =  parseInt($routeParams.index) + 1;
+	$rootScope.activePage = 'case_detail_' + $routeParams.index;
+	
 
 	var jsonData = [
 	  {
