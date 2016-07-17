@@ -4,35 +4,40 @@ angular.module('beruffCompanyApp', []);
 angular.module('beruffCompanyApp')
 .controller('HomeController', function ($scope, $rootScope) {
 	$rootScope.activePage = 'home';
+	$rootScope.overlayText =  ""
 });
 
 angular.module('beruffCompanyApp')
 .controller('AboutController', function ($scope, $rootScope) {
 	$rootScope.activePage = 'about';
-	$scope.category = "default"
+	$scope.category = "default";
+	$rootScope.overlayText = "\"Ultimately, creating value is about serving, giving more and better service than anyone else\" \n  --Eduardo Beruff, founding CEO. "
 });
 
 angular.module('beruffCompanyApp')
 .controller('IndustriesController', function ($scope, $rootScope) {
 	$rootScope.activePage = 'industries';
-	$scope.category = "companies"
+	$scope.category = "companies";
+	$rootScope.overlayText = "Putting our clients’ interests first"
 });
 angular.module('beruffCompanyApp')
 .controller('ServicesController', function ($scope, $rootScope) {
 	$rootScope.activePage = 'services';
-	$scope.category = "consult"
+	$scope.category = "consult";
+	$rootScope.overlayText = "Delivering unique value"
 });
 
 angular.module('beruffCompanyApp')
 .controller('CasesController', function ($scope, $rootScope) {
 	$rootScope.activePage = 'cases';
 	$scope.caseStudy = 0;
+	$rootScope.overlayText = "Delivering value; generating tangible benefits"
 });
 
 angular.module('beruffCompanyApp')
 .controller('StudyController', function ($scope, $rootScope, $log, $routeParams) {
 	$rootScope.activePage = 'case_detail_' + $routeParams.index;
-	
+	$rootScope.overlayText = ""
 
 	var jsonData = [
 	  {
@@ -70,6 +75,7 @@ angular.module('beruffCompanyApp')
 angular.module('beruffCompanyApp')
 .controller('ContactController', function ($scope, $rootScope) {
 	$rootScope.activePage = 'contact';
+	$rootScope.overlayText = ""
 });
 
 angular.module('beruffCompanyApp')

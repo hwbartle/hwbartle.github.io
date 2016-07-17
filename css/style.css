@@ -18,6 +18,23 @@ html{
 	background-color:#e6e6e6;
 }
 
+.overlayText
+{
+	text-align: left;
+	font-size: 2.4em;
+	line-height: 1.2em;
+	color: #e6e6e6;
+	width:50%;
+
+   text-shadow: 2px 2px black;
+   font-family: 'Chronicle Deck', Georgia, Times, 'Times New Roman', serif;
+}
+.navigation-list,
+.header
+{
+	font-family: 'Chronicle Deck', Georgia, Times, 'Times New Roman', serif;
+}
+
 .header a:visited,
 .header a:link,
 .navigation-list a:visited,
@@ -66,7 +83,7 @@ body.current-page-services
 
 body.current-page-about
 {
-	background: url("../images/background/about.jpeg") no-repeat top center;
+	background: url("../images/background/about.png") no-repeat top center;
 	
 }
 body.current-page-cases
@@ -100,7 +117,62 @@ body.current-page-global
 	background: url("../images/cases/globalBio.jpeg") no-repeat top center;
 }
 
+body.current-page-home .page-container
+{
+	margin-top: 40%;
+}
 
+body.current-page-industries .page-container
+{
+	margin-top: 5%;
+}
+body.current-page-services .page-container
+{
+	margin-top: 40%;
+}
+body.current-page-about .page-container
+{
+	margin-top: 3%;
+}
+body.current-page-cases .page-container
+{
+	margin-top: 30%;
+}
+body.current-page-contact .page-container
+{
+	margin-top: 45%;
+}
+body.current-page-case_detail .page-container
+{
+	margin-top: 40%;
+}
+body.current-page-eviti .page-container
+{
+	margin-top: 40%;
+}
+body.current-page-asco .page-container
+{
+	margin-top: 40%;
+}
+body.current-page-clinical .page-container
+{
+	margin-top: 40%;
+}
+body.current-page-global .page-container
+{
+	margin-top: 40%;
+}
+
+
+body.current-page-about .overlayText
+{
+	margin-top: 12%;
+}
+
+body.current-page-industries .overlayText
+{
+	margin-top: 30%;
+}
 /* Text */
 
 
@@ -108,7 +180,7 @@ body.current-page-global
 {
 	background: rgb(15,37,67);
 	width: 100%;
-	height: 35px;
+	height: 45px;
 }
 
 .header img
@@ -140,7 +212,7 @@ ul.navigation-list
 
 .page-container
 {
-	margin-top:40%;
+
 	background: linear-gradient(to left, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 80%, #e6e6e6 100%);
 	min-height: 280px;
 	font-family: 'Chronicle Deck', Georgia, Times, 'Times New Roman', serif;
@@ -156,6 +228,7 @@ body.current-page-home .page-container
 	width:70%;
 	margin-left:15%;
 	margin-right:15%;
+	line-height: 1.75em;
 	
 	
 
@@ -264,6 +337,11 @@ html[xmlns] .clearfix {
 * html .clearfix {
     height: 1%;
 }
+
+
+
+
+
 
 
 
