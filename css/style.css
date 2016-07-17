@@ -119,7 +119,7 @@ body.current-page-global
 
 body.current-page-home .page-container
 {
-	margin-top: 40%;
+	margin-top: 4%;
 }
 
 body.current-page-industries .page-container
@@ -163,6 +163,12 @@ body.current-page-global .page-container
 	margin-top: 40%;
 }
 
+body.current-page-home .overlayText
+{
+	width: 100%;
+	margin-top:36%;
+	text-align: center;
+}
 
 body.current-page-about .overlayText
 {

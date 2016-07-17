@@ -4,7 +4,7 @@ angular.module('beruffCompanyApp', []);
 angular.module('beruffCompanyApp')
 .controller('HomeController', function ($scope, $rootScope) {
 	$rootScope.activePage = 'home';
-	$rootScope.overlayText =  ""
+	$rootScope.overlayText =  "As your trusted partner, we are committed to your success"
 });
 
 angular.module('beruffCompanyApp')
