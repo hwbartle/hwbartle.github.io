@@ -24,7 +24,7 @@ html{
 	font-size: 2.4em;
 	line-height: 1.2em;
 	color: #e6e6e6;
-	width:50%;
+	width:408px;
 
    text-shadow: 2px 2px black;
    font-family: 'Chronicle Deck', Georgia, Times, 'Times New Roman', serif;
@@ -102,15 +102,15 @@ body.current-page-case_detail
 }
 body.current-page-eviti
 {
-	background: url("../images/cases/eviti.jpeg") no-repeat top center;
+	background: url("../images/cases/eviti.png") no-repeat top center;
 }
 body.current-page-asco
 {
-	background: url("../images/cases/ASCO.jpeg") no-repeat top center;
+	background: url("../images/cases/ASCO.png") no-repeat top center;
 }
 body.current-page-clinical
 {
-	background: url("../images/cases/clinical.jpeg") no-repeat top center;
+	background: url("../images/cases/clinical.png") no-repeat top center;
 }
 body.current-page-global
 {
@@ -148,19 +148,19 @@ body.current-page-case_detail .page-container
 }
 body.current-page-eviti .page-container
 {
-	margin-top: 40%;
+	margin-top: 45%;
 }
 body.current-page-asco .page-container
 {
-	margin-top: 40%;
+	margin-top: 45%;
 }
 body.current-page-clinical .page-container
 {
-	margin-top: 40%;
+	margin-top: 45%;
 }
 body.current-page-global .page-container
 {
-	margin-top: 40%;
+	margin-top: 45%;
 }
 
 body.current-page-home .overlayText
@@ -168,6 +168,7 @@ body.current-page-home .overlayText
 	width: 100%;
 	margin-top:36%;
 	text-align: center;
+	background: radial-gradient(ellipse at center, rgba(41,70,144,0.65) 0%,rgba(41,70,144,0.65) 50%,transparent 75%);
 }
 
 body.current-page-about .overlayText
@@ -311,14 +312,13 @@ body.current-page-home .page-container
 }
 
 .caseStudy_list div{
-	padding-top: 30px;
 	padding-left: 30%;
 }
 
 .caseStudy_list li
 {
-	height:130px;
-	margin-bottom: 10px;
+	height:60px;
+	margin-bottom: 40px;
 }
 
 
