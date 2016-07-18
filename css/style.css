@@ -24,7 +24,8 @@ html{
 	font-size: 2.4em;
 	line-height: 1.2em;
 	color: #e6e6e6;
-	width:408px;
+	left:10%;
+	right:10%;
 
    text-shadow: 2px 2px black;
    font-family: 'Chronicle Deck', Georgia, Times, 'Times New Roman', serif;
@@ -66,7 +67,7 @@ html{
     color:black;
 }
 
-
+/*
 body.current-page-home
 {
 	background: url("../images/background/home.jpg") no-repeat top center;
@@ -117,6 +118,7 @@ body.current-page-global
 	background: url("../images/cases/globalBio.jpeg") no-repeat top center;
 }
 
+
 body.current-page-home .page-container
 {
 	margin-top: 4%;
@@ -162,13 +164,15 @@ body.current-page-global .page-container
 {
 	margin-top: 45%;
 }
-
+*/
 body.current-page-home .overlayText
 {
 	width: 100%;
-	margin-top:36%;
+	margin-top:10%;
 	text-align: center;
 	font-size: 2.1em;
+	left:0%;
+	right:0%;
 	background: radial-gradient(ellipse at center, rgba(41,70,144,0.65) 0%,rgba(41,70,144,0.65) 50%,transparent 75%);
 }
 
@@ -181,12 +185,16 @@ body.current-page-industries .overlayText
 {
 	margin-top: 30%;
 }
+body.current-page-cases .overlayText
+{
+	margin-top: 20%;
+}
 /* Text */
 
 
 .header
 {
-	background: rgb(15,37,67);
+	background: rgb(200, 200, 200);
 	width: 100%;
 	height: 70px;
 }
@@ -194,8 +202,9 @@ body.current-page-industries .overlayText
 .header img
 {
 	height: 65px;
-	float: left;
-	padding-left: 37%
+	display: block;
+margin-left: auto;
+margin-right: auto
 }
 
 .header-title
@@ -220,7 +229,10 @@ ul.navigation-list
 
 .page-container
 {
-
+	
+	margin-left:15%;
+	margin-right:15%;
+	width:70%;
 	background: linear-gradient(to left, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 80%, #e6e6e6 100%);
 	min-height: 280px;
 	font-family: 'Chronicle Deck', Georgia, Times, 'Times New Roman', serif;
@@ -233,9 +245,7 @@ body.current-page-home .page-container
 
 .content-container
 {
-	width:70%;
-	margin-left:15%;
-	margin-right:15%;
+	width:100%;
 	line-height: 1.75em;
 	
 	

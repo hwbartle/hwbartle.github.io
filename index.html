@@ -51,10 +51,12 @@
 			<!-- HEADER END -->
 
 			<div class="header">
-				<a href="#/home"><img src="images/logoSmall.png"></img><div style="text-align: left; padding-top: 15px; font-size: 2.2em">Beruff & Company</div> </a>
+				<a href="#/home">
+				<img src="images/logo.png"></img>
+				</a>
 			</div>
 			<div>
-				<ul class="navigation-list">
+				<ul class="navigation-list" style="margin-bottom: 0px;">
 					<li><a href="#/home">Home</a></li>
 					<li><a href="#/about">About</a></li>
 					<li><a href="#/services">Services</a></li>
@@ -66,9 +68,10 @@
 			</div>
 
 		<div class="content-container clearfix">
-				<div class="overlayText"><i>{{overlayText}}</i></div>
+				<div class="overlayText" style="position:absolute"><i>{{overlayText}}</i></div>
+				<img src="{{bgImgSource}}" style="width:100%; height: auto;"></img>
 
-			<div class="page-container clearfix" ng-view=""></div>
+			<div class="page-container clearfix" ng-hide="activePage == 'home'" ng-view=""></div>
 
 		</div>
 
