@@ -68,6 +68,18 @@ html{
     color:black;
 }
 
+.contact-link a
+{
+	text-decoration: none;
+    color:black;
+}
+
+a.back-button
+{
+	text-decoration: none;
+    color:black;
+}
+
 /*
 body.current-page-home
 {
@@ -174,8 +186,9 @@ body.current-page-home .overlayText
 	font-size: 2.1em;
 	left:0%;
 	right:0%;
-	background: radial-gradient(ellipse at center, rgba(41,70,144,0.65) 0%,rgba(41,70,144,0.65) 50%,transparent 75%);
+	
 }
+/* background: radial-gradient(ellipse at center, rgba(41,70,144,0.65) 0%,rgba(41,70,144,0.65) 50%,transparent 75%); */
 
 /*
 body.current-page-about .overlayText

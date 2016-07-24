@@ -4,7 +4,7 @@ angular.module('beruffCompanyApp', []);
 angular.module('beruffCompanyApp')
 .controller('HomeController', function ($scope, $rootScope) {
 	$rootScope.activePage = 'home';
-	$rootScope.overlayText =  "As your trusted partner, we are committed to your success"
+	$rootScope.overlayText =  "Beruff & Company is a management consulting firm that partners with companies and investors in the health care and biotechnology industries to establish and achieve your goals.  As your trusted partner, we are committed to your success."
 	$rootScope.bgImgSource = "images/background/home.jpg"
 });
 
