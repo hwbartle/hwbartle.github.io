@@ -180,22 +180,16 @@ body.current-page-global .page-container
 */
 body.current-page-home .overlayText
 {
-	width: 100%;
+	width: 80%;
 	margin-top:10%;
 	text-align: center;
 	font-size: 2.1em;
-	left:0%;
-	right:0%;
+	background: radial-gradient(ellipse at center, rgba(41,70,144,0.5) 0%,rgba(41,70,144,0.5) 5%,transparent 75%);
 	
 }
-/* background: radial-gradient(ellipse at center, rgba(41,70,144,0.65) 0%,rgba(41,70,144,0.65) 50%,transparent 75%); */
+/*  */
 
 /*
-body.current-page-about .overlayText
-{
-	margin-top: 12%;
-}
-
 body.current-page-industries .overlayText
 {
 	margin-top: 30%;
