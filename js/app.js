@@ -4,7 +4,7 @@ angular.module('beruffCompanyApp', []);
 angular.module('beruffCompanyApp')
 .controller('HomeController', function ($scope, $rootScope) {
 	$rootScope.activePage = 'home';
-	$rootScope.overlayText =  "Beruff & Company is a management consulting firm that partners with companies and investors in the health care and biotechnology industries to establish and achieve your goals.  As your trusted partner, we are committed to your success."
+	$rootScope.overlayText =  "Beruff & Company is a management consulting firm that partners with companies and investors in the health care and biotechnology industries to establish and achieve your goals."
 	$rootScope.bgImgSource = "images/background/home.jpg"
 });
 
@@ -14,6 +14,11 @@ angular.module('beruffCompanyApp')
 	$scope.category = "default";
 	$rootScope.overlayText = "\"Ultimately, creating value is about serving – giving more and better service than anyone else\", Eduardo Beruff, Founder & CEO"
 	$rootScope.bgImgSource = "images/background/about.png"
+
+	$scope.$watch('category', function(val){
+		$rootScope.overlayText = val == 'who' || val == 'why' ?  'As your trusted partner, we are committed to your success.' : "\"Ultimately, creating value is about serving – giving more and better service than anyone else\", Eduardo Beruff, Founder & CEO";
+	});
+
 });
 
 angular.module('beruffCompanyApp')
