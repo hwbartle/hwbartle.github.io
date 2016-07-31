@@ -4,7 +4,7 @@ angular.module('beruffCompanyApp', []);
 angular.module('beruffCompanyApp')
 .controller('HomeController', function ($scope, $rootScope) {
 	$rootScope.activePage = 'home';
-	$rootScope.overlayText =  "Beruff & Company is a management consulting firm that partners with companies and investors in the health care and biotechnology industries to establish and achieve your goals."
+	$rootScope.overlayText =  "Beruff & Company is a management consulting firm that partners with companies and investors in the health care and biotechnology industries to create lasting value."
 	$rootScope.bgImgSource = "images/background/home.jpg"
 });
 
@@ -12,11 +12,12 @@ angular.module('beruffCompanyApp')
 .controller('AboutController', function ($scope, $rootScope) {
 	$rootScope.activePage = 'about';
 	$scope.category = "default";
-	$rootScope.overlayText = "\"Ultimately, creating value is about serving – giving more and better service than anyone else\", Eduardo Beruff, Founder & CEO"
+	$rootScope.overlayText = "\"Ultimately, creating value is about serving – giving more and better service than anyone else,\" Eduardo Beruff, Founder & CEO"
 	$rootScope.bgImgSource = "images/background/about.png"
 
 	$scope.$watch('category', function(val){
 		$rootScope.overlayText = val == 'who' || val == 'why' ?  'As your trusted partner, we are committed to your success.' : "\"Ultimately, creating value is about serving – giving more and better service than anyone else\", Eduardo Beruff, Founder & CEO";
+		//$rootScope.activePage = val == 'bio' ? 'bioPage' : 'about';
 	});
 
 });
@@ -40,7 +41,7 @@ angular.module('beruffCompanyApp')
 .controller('CasesController', function ($scope, $rootScope) {
 	$rootScope.activePage = 'cases';
 	$scope.caseStudy = 0;
-	$rootScope.overlayText = "Delivering value; generating tangible benefits"
+	$rootScope.overlayText = "Generating tangible benefits"
 	$rootScope.bgImgSource = "images/background/cases.jpg"
 });
 
@@ -116,6 +117,10 @@ controller: 'ServicesController'
 when('/cases', {
 templateUrl: 'pages/case_studies.html',
 controller: 'CasesController'
+}).
+when('/terms', {
+templateUrl: 'pages/terms_of_use.html',
+controller: 'ContactController'
 }).
 when('/case_detail/:index', {
 templateUrl: 'pages/case_studies_detail.html',
