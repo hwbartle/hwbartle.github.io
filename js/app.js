@@ -9,15 +9,15 @@ angular.module('beruffCompanyApp')
 });
 
 angular.module('beruffCompanyApp')
-.controller('AboutController', function ($scope, $rootScope) {
+.controller('AboutController', function ($scope, $rootScope, $window) {
 	$rootScope.activePage = 'about';
 	$scope.category = "default";
 	$rootScope.overlayText = "\"Ultimately, creating value is about serving – giving more and better service than anyone else,\" Eduardo Beruff, Founder & CEO"
 	$rootScope.bgImgSource = "images/background/about.png"
 
 	$scope.$watch('category', function(val){
-		$rootScope.overlayText = val == 'who' || val == 'why' ?  'As your trusted partner, we are committed to your success.' : "\"Ultimately, creating value is about serving – giving more and better service than anyone else\", Eduardo Beruff, Founder & CEO";
-		//$rootScope.activePage = val == 'bio' ? 'bioPage' : 'about';
+		$rootScope.overlayText = val == 'who' || val == 'why' ?  'As your trusted partner, we are committed to your success.' : val == 'bio' ? "" : "\"Ultimately, creating value is about serving – giving more and better service than anyone else,\" Eduardo Beruff, Founder & CEO";
+		$rootScope.activePage = val == 'bio' ? 'bioPage' : 'about';
 	});
 
 });
@@ -120,6 +120,10 @@ controller: 'CasesController'
 }).
 when('/terms', {
 templateUrl: 'pages/terms_of_use.html',
+controller: 'ContactController'
+}).
+when('/privacy', {
+templateUrl: 'pages/privacy.html',
 controller: 'ContactController'
 }).
 when('/case_detail/:index', {
