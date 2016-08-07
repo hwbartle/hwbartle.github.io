@@ -18,16 +18,50 @@ html{
 	background-color:#e6e6e6;
 }
 
+@media screen and (max-width:768px)
+{
+	.mobile-view
+	{
+		display:block !important;
+	}
+	.tablet-view
+	{
+		display:none !important;
+	}
+}
+
+@media screen and (min-width:769px)
+{
+	.mobile-view
+	{
+		display:none !important;
+	}
+	.tablet-view
+	{
+		display:block !important;
+	}
+}
+
+.mobileDropDown 
+{
+	list-style-type: none;
+	-webkit-column-count: 2; /* Chrome, Safari, Opera */
+    -moz-column-count: 2; /* Firefox */
+    column-count: 2;
+}
+
+
+
 .backgroundImage
 {
 	margin-top:120px;
 }
 
+
 .overlayText
 {
 	margin-top: 20%;
 	text-align: center;
-	font-size: 2.4em;
 	line-height: 1.2em;
 	color: white;
 	left:10%;
@@ -35,6 +69,23 @@ html{
 
    text-shadow: 2px 2px black;
    font-family: 'Chronicle Deck', Georgia, Times, 'Times New Roman', serif;
+}
+
+
+@media screen and (max-width:768px)
+{
+	.overlayText
+	{
+		font-size: 1.2em;
+	}
+}
+
+@media screen and (min-width:769px)
+{
+	.overlayText
+	{
+			font-size: 2.4em;
+	}
 }
 .navigation-list,
 .header
@@ -188,9 +239,24 @@ body.current-page-home .overlayText
 	width: 80%;
 	margin-top:10%;
 	text-align: center;
-	font-size: 2.1em;
 	background: radial-gradient(ellipse at center, rgba(41,70,144,0.5) 0%,rgba(41,70,144,0.5) 5%,transparent 75%);
 	
+}
+
+@media screen and (max-width:768px)
+{
+	body.current-page-home .overlayText
+	{
+		font-size: 1.2em;
+	}
+}
+
+@media screen and (min-width:769px)
+{
+	body.current-page-home .overlayText
+	{
+			font-size: 2.1em;
+	}
 }
 /*  */
 
@@ -245,14 +311,37 @@ ul.navigation-list
 
 .page-container
 {
-	
-	margin-left:15%;
-	margin-right:15%;
-	width:70%;
 	background: linear-gradient(to left, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 80%, #e6e6e6 100%);
 	min-height: 280px;
 	font-family: 'Chronicle Deck', Georgia, Times, 'Times New Roman', serif;
 }
+
+
+
+@media screen and (max-width:768px)
+{
+	.page-container
+	{
+		width:98%;
+		margin-left:1%;
+		margin-right:1%;
+	}
+}
+
+@media screen and (min-width:769px)
+{
+	.page-container
+	{
+		width:70%;
+		margin-left:15%;
+		margin-right:15%;
+	}
+}
+
+
+
+
+
 
 body.current-page-home .page-container
 {
@@ -302,10 +391,15 @@ body.current-page-bio .page-container
 
 
 /*PAGES*/
-.page-navigation-container
+
+
+@media screen and (min-width:769px)
 {
-	width: 20%;
-	float:left;
+	.page-navigation-container
+	{
+		width: 20%;
+		float:left;
+	}
 }
 
 .page-navigation-container-text
