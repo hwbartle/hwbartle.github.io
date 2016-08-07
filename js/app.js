@@ -3,6 +3,7 @@ angular.module('beruffCompanyApp', []);
 
 angular.module('beruffCompanyApp')
 .controller('HomeController', function ($scope, $rootScope) {
+	$rootScope.subPage = "";
 	$rootScope.activePage = 'home';
 	$rootScope.overlayText =  "Beruff & Company is a management consulting firm that partners with companies and investors in the health care and biotechnology industries to create lasting value."
 	$rootScope.bgImgSource = "images/background/home.jpg"
@@ -21,10 +22,12 @@ angular.module('beruffCompanyApp')
 			case "who":
 				$rootScope.activePage = 'about'
 				$rootScope.overlayText = 'As your trusted partner, we are committed to your success.'
+				$rootScope.subPage = "";
 				break;
 			case "why":
 				$rootScope.activePage = 'about'
 				$rootScope.overlayText = 'As your trusted partner, we are committed to your success.'
+				$rootScope.subPage = "";
 				break;
 			case "mistakes":
 				$rootScope.activePage = 'about'
@@ -34,8 +37,12 @@ angular.module('beruffCompanyApp')
 			case "bio":
 				$rootScope.activePage = 'bioPage'
 				$rootScope.overlayText = ""
+				$rootScope.subPage = "";
 				$window.scrollTo(0,0)
 				break;
+		}
+		if(/iPhone/.test($window.navigator.userAgent)){
+			$window.scrollTo(0,0)
 		}
 	});
 
@@ -57,6 +64,7 @@ angular.module('beruffCompanyApp')
 
 angular.module('beruffCompanyApp')
 .controller('IndustriesController', function ($scope, $rootScope) {
+	$rootScope.subPage = "";
 	$rootScope.activePage = 'industries';
 	$scope.category = "companies";
 	$rootScope.overlayText = "Putting our clients’ interests first"
@@ -71,6 +79,9 @@ angular.module('beruffCompanyApp')
 
 	  $scope.$watch('selected', function(select){
 	  	$scope.category = select.value;
+	  	if(/iPhone/.test(window.navigator.userAgent)){
+			$window.scrollTo(0,0)
+		}
 	  })
 
 
@@ -78,6 +89,7 @@ angular.module('beruffCompanyApp')
 angular.module('beruffCompanyApp')
 .controller('ServicesController', function ($scope, $rootScope) {
 	$rootScope.activePage = 'services';
+	$rootScope.subPage = "";
 	$scope.category = "consult";
 	$rootScope.overlayText = "Delivering unique value"
 	$rootScope.bgImgSource = "images/background/services.jpg"
@@ -91,6 +103,9 @@ angular.module('beruffCompanyApp')
 
 	  $scope.$watch('selected', function(select){
 	  	$scope.category = select.value;
+	  	if(/iPhone/.test(window.navigator.userAgent)){
+			$window.scrollTo(0,0)
+		}
 	  })
 
 
@@ -99,6 +114,7 @@ angular.module('beruffCompanyApp')
 angular.module('beruffCompanyApp')
 .controller('CasesController', function ($scope, $rootScope) {
 	$rootScope.activePage = 'cases';
+	$rootScope.subPage = "";
 	$scope.caseStudy = 0;
 	$rootScope.overlayText = "Generating tangible benefits"
 	$rootScope.bgImgSource = "images/background/cases.jpg"
@@ -108,6 +124,7 @@ angular.module('beruffCompanyApp')
 .controller('StudyController', function ($scope, $rootScope, $log, $routeParams) {
 	$rootScope.activePage = 'case_detail_' + $routeParams.index;
 	$rootScope.overlayText = ""
+	$rootScope.subPage = "";
 
 	var jsonData = [
 	  {
@@ -144,6 +161,7 @@ angular.module('beruffCompanyApp')
 
 angular.module('beruffCompanyApp')
 .controller('ContactController', function ($scope, $rootScope) {
+	$rootScope.subPage = "";
 	$rootScope.activePage = 'contact';
 	$rootScope.overlayText = ""
 	$rootScope.bgImgSource = "images/background/contact.png"

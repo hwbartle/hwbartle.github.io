@@ -113,7 +113,7 @@ select
 {
 	.overlayText
 	{
-		font-size: 1.2em;
+		font-size: 1.6em;
 		margin-top: 10%;
 	}
 }
@@ -334,7 +334,8 @@ body.current-page-cases .overlayText
 {
 	body.current-page-cases .overlayText
 	{
-		margin-top:25%;
+		margin-top:26%;
+		font-size:1.46em;
 	}
 }
 
