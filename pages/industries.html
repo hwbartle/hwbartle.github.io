@@ -1,6 +1,9 @@
-<div class="page-navigation-container">
+<div class="page-navigation-container tablet-view">
 	<p class="page-navigation-container-text" ng-click="category = 'companies'">Companies</p>
 	<p class="page-navigation-container-text" ng-click="category = 'Investors'">Investors</p>
+</div>
+<div class="page-navigation-container mobile-view">
+	<select ng-model="selected" ng-options="v.name for v in selections"></select>
 </div>
 
 <div class="page-content-container">

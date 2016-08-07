@@ -23,6 +23,20 @@ angular.module('beruffCompanyApp')
 		}
 	});
 
+	$scope.selections = [
+	    {name:'Who We Are', value:'who'},
+	    {name:'Why Clients Choose Us', value:'why'},
+	    {name:'Five Fatal Mistakes', value:'mistakes'},
+	    {name:'Eduardo Beruff Bio', value:'bio'},
+	    {name:'Contact', value:'contact'}
+	  ];
+
+	  $scope.selected = $scope.selections[0];
+
+	  $scope.$watch('selected', function(select){
+	  	select.value == 'contact' ?  $window.location.href = '#/contact' :$scope.category = select.value;
+	  });
+
 });
 
 angular.module('beruffCompanyApp')
@@ -31,6 +45,19 @@ angular.module('beruffCompanyApp')
 	$scope.category = "companies";
 	$rootScope.overlayText = "Putting our clients’ interests first"
 	$rootScope.bgImgSource = "images/background/industries.png"
+
+	$scope.selections = [
+	    {name:'Companies', value:'companies'},
+	    {name:'Investors', value:'Investors'}
+	  ];
+
+	  $scope.selected = $scope.selections[0];
+
+	  $scope.$watch('selected', function(select){
+	  	$scope.category = select.value;
+	  })
+
+
 });
 angular.module('beruffCompanyApp')
 .controller('ServicesController', function ($scope, $rootScope) {
@@ -38,6 +65,19 @@ angular.module('beruffCompanyApp')
 	$scope.category = "consult";
 	$rootScope.overlayText = "Delivering unique value"
 	$rootScope.bgImgSource = "images/background/services.jpg"
+
+	$scope.selections = [
+	    {name:'Management Consulting', value:'consult'},
+	    {name:'Implementation', value:'implement'}
+	  ];
+
+	  $scope.selected = $scope.selections[0];
+
+	  $scope.$watch('selected', function(select){
+	  	$scope.category = select.value;
+	  })
+
+
 });
 
 angular.module('beruffCompanyApp')
