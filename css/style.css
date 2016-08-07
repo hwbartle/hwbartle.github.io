@@ -61,7 +61,7 @@ select
 
 .backgroundImage
 {
-	margin-top:120px;
+	margin-top:138px;
 	width:100%; 
 	height: auto;
 }
@@ -70,7 +70,7 @@ select
 {
 	.backgroundImage
 	{
-		margin-top:105px;
+		margin-top:125px;
 	}
 }
 
@@ -339,12 +339,21 @@ body.current-page-cases .overlayText
 }
 
 
-@media screen and (max-width:768px)
+@media screen and (max-width:480px)
 {
 	body.current-page-about .overlayText
 	{
 		font-size: 0.9em;
 		margin-top: 8% !important;
+	}
+}
+
+@media screen and (min-width:481px) and (max-width:768px)
+{
+	body.current-page-about .overlayText
+	{
+		font-size: 1.3em;
+		margin-top: 9% !important;
 	}
 }
 
