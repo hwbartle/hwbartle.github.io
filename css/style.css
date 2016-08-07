@@ -58,6 +58,16 @@ html{
 	width:100%; 
 	height: auto;
 }
+
+@media screen and (max-width:768px)
+{
+	.backgroundImage
+	{
+		margin-top:105px;
+	}
+}
+
+
 @media screen and (min-width:769px)
 {
 	body.current-page-home .backgroundImage
@@ -306,11 +316,33 @@ body.current-page-industries .overlayText
 	margin-top: 30%;
 }
 */
+
 body.current-page-cases .overlayText
 {
 	margin-top: 25%;
 
 }
+
+@media screen and (max-width:768px)
+{
+	body.current-page-cases .overlayText
+	{
+		margin-top: 18%;
+	}
+}
+
+
+@media screen and (max-width:768px)
+{
+	body.current-page-about .overlayText
+	{
+		font-size: 0.9em;
+		margin-top: 8% !important;
+	}
+}
+
+
+
 /* Text */
 
 
@@ -350,7 +382,21 @@ ul.navigation-list
 	padding-left: 0px;
 	margin-top:0px;
 	background-color:rgba(41,70,144,1);
+	padding-left:1%;
+	padding-right:1%;
 }
+
+
+@media screen and (min-width:671px) and (max-width:768px)
+{
+	ul.navigation-list
+	{
+		padding-left:25%;
+		padding-right:25%;
+	}
+}
+
+
 .navigation-list li
 {
 	display: inline;
@@ -489,6 +535,13 @@ body.current-page-bio .page-container
 .case-study-img{
 	width:25%;
 	float:left;
+}
+@media screen and (max-width:480px)
+{
+	.case-study-img
+	{
+		padding-top: 10%;
+	}
 }
 
 .caseStudy_list{
