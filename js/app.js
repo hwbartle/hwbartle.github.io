@@ -18,6 +18,10 @@ angular.module('beruffCompanyApp')
 	$scope.$watch('category', function(val){
 		$rootScope.overlayText = val == 'who' || val == 'why' ?  'As your trusted partner, we are committed to your success.' : val == 'bio' ? "" : "\"Ultimately, creating value is about serving – giving more and better service than anyone else,\" Eduardo Beruff, Founder & CEO";
 		$rootScope.activePage = val == 'bio' ? 'bioPage' : 'about';
+		$rootScope.subPage = "";
+		if(val == 'mistakes'){
+			$rootScope.subPage = 'mistakes';
+		}
 		if(val == 'bio'){
 			$window.scrollTo(0,0)
 		}

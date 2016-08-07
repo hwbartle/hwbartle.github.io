@@ -330,7 +330,18 @@ body.current-page-cases .overlayText
 
 }
 
-@media screen and (max-width:768px)
+@media screen and (max-width:480px)
+{
+	body.current-page-cases .overlayText
+	{
+		margin-top:25%;
+	}
+}
+
+
+
+
+@media screen and (min-width:481px) and (max-width:768px)
 {
 	body.current-page-cases .overlayText
 	{
@@ -343,8 +354,8 @@ body.current-page-cases .overlayText
 {
 	body.current-page-about .overlayText
 	{
-		font-size: 0.9em;
-		margin-top: 8% !important;
+		font-size: 1.1em;
+		margin-top: 16% ;
 	}
 }
 
@@ -365,6 +376,15 @@ body.current-page-cases .overlayText
 	}
 }
 
+
+@media screen and (max-width:480px)
+{
+	.overlayText.longText
+	{
+		margin-top: 5% !important;
+    	font-size: 1em !important;
+	}
+}
 
 
 /* Text */

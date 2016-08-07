@@ -80,7 +80,7 @@
 
 
 		<div class="content-container clearfix">
-				<div class="overlayText" style="position:absolute; top:120px;"><i>{{overlayText}}</i></div>
+				<div class="overlayText" ng-class="{'longText' : subPage == 'mistakes'}" style="position:absolute; top:120px;"><i>{{overlayText}}</i></div>
 				<img class="backgroundImage" src="images/background/home.jpeg" ng-show="activePage == 'home'"></img>
 				<img class="backgroundImage" src="images/background/industries.jpeg" ng-show="activePage == 'industries'"></img>
 				<img class="backgroundImage" src="images/background/services.jpeg" ng-show="activePage == 'services'" ></img>
