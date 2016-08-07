@@ -71,7 +71,7 @@ html{
 {
 	body.current-page-home .backgroundImage
 	{
-		width:auto !important;
+		width:100% !important;
 		height: 100% !important;
 	}
 }
