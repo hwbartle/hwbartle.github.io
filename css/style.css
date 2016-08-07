@@ -55,12 +55,32 @@ html{
 .backgroundImage
 {
 	margin-top:120px;
+	width:100%; 
+	height: auto;
 }
+@media screen and (min-width:769px)
+{
+	body.current-page-home .backgroundImage
+	{
+		width:100%;
+		height: auto;
+	}
+}
+
+@media screen and (max-width:768px)
+{
+	body.current-page-home .backgroundImage
+	{
+		width:auto !important;
+		height: 100% !important;
+	}
+}
+
 
 
 .overlayText
 {
-	margin-top: 20%;
+	
 	text-align: center;
 	line-height: 1.2em;
 	color: white;
@@ -77,6 +97,7 @@ html{
 	.overlayText
 	{
 		font-size: 1.2em;
+		margin-top: 12%;
 	}
 }
 
@@ -85,6 +106,7 @@ html{
 	.overlayText
 	{
 			font-size: 2.4em;
+			margin-top: 20%;
 	}
 }
 .navigation-list,
@@ -234,14 +256,32 @@ body.current-page-global .page-container
 	margin-top: 45%;
 }
 */
-body.current-page-home .overlayText
+
+
+@media screen and (max-width:768px)
 {
-	width: 80%;
-	margin-top:10%;
-	text-align: center;
-	background: radial-gradient(ellipse at center, rgba(41,70,144,0.5) 0%,rgba(41,70,144,0.5) 5%,transparent 75%);
-	
+	body.current-page-home .overlayText
+	{
+		width: 80%;
+		text-align: center;
+		background: radial-gradient(ellipse at center, rgba(41,70,144,0.5) 0%,rgba(41,70,144,0.5) 5%,transparent 75%);
+		
+	}
 }
+
+@media screen and (min-width:769px)
+{
+	body.current-page-home .overlayText
+	{
+		width: 80%;
+		margin-top:10%;
+		text-align: center;
+		background: radial-gradient(ellipse at center, rgba(41,70,144,0.5) 0%,rgba(41,70,144,0.5) 5%,transparent 75%);
+		
+	}
+}
+
+
 
 @media screen and (max-width:768px)
 {
