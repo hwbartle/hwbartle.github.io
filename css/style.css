@@ -18,6 +18,11 @@ html{
 	background-color:#e6e6e6;
 }
 
+.backgroundImage
+{
+	margin-top:120px;
+}
+
 .overlayText
 {
 	margin-top: 20%;
@@ -229,7 +234,7 @@ ul.navigation-list
 	text-align:  center;
 	padding-left: 0px;
 	margin-top:0px;
-	background-color:rgba(41,70,144,0.6);
+	background-color:rgba(41,70,144,1);
 }
 .navigation-list li
 {

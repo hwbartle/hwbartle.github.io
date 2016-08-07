@@ -48,15 +48,13 @@
 				</ul>
 
 			</div>
-			<!-- HEADER END style="position: fixed;z-index: 99;"-->
-			
-			<div class="header" >
+			<!-- HEADER END-->
+
+			<div class="header" style="position: fixed;z-index: 99;">
 				<a href="#/home">
 				<img src="images/logo.png"></img>
 				</a>
-			</div>
-			
-			<div>
+
 				<ul class="navigation-list" style="margin-bottom: 0px;">
 					<li><a href="#/home">Home</a></li>
 					<li><a href="#/about">About</a></li>
@@ -68,19 +66,20 @@
 				</ul>
 			</div>
 
+
 		<div class="content-container clearfix">
-				<div class="overlayText" style="position:absolute"><i>{{overlayText}}</i></div>
-				<img src="images/background/home.jpeg" ng-show="activePage == 'home'" style="width:100%; height: auto;"></img>
-				<img src="images/background/industries.jpeg" ng-show="activePage == 'industries'" style="width:100%; height: auto;"></img>
-				<img src="images/background/services.jpeg" ng-show="activePage == 'services'" style="width:100%; height: auto;"></img>
-				<img src="images/background/about.jpeg" ng-show="activePage == 'about'" style="width:100%; height: auto;"></img>
-				<img src="images/background/results.jpeg" ng-show="activePage == 'cases'" style="width:100%; height: auto;"></img>
-				<img src="images/background/contact.jpeg" ng-show="activePage == 'contact'" style="width:100%; height: auto;"></img>
-				<img src="images/cases/eviti.jpeg" ng-show="activePage == 'case_detail_0'" style="width:100%; height: auto;"></img>
-				<img src="images/cases/ASCO.jpeg" ng-show="activePage == 'case_detail_1'" style="width:100%; height: auto;"></img>
-				<img src="images/cases/clinical.jpeg" ng-show="activePage == 'case_detail_2'" style="width:100%; height: auto;"></img>
-				<img src="images/cases/globalBio.jpeg" ng-show="activePage == 'case_detail_3'" style="width:100%; height: auto;"></img>
-				<img src="images/background/bioPic.jpg" ng-show="activePage == 'bioPage'" style="width:100%; height: auto;"></img>
+				<div class="overlayText" style="position:absolute; top:120px;"><i>{{overlayText}}</i></div>
+				<img class="backgroundImage" src="images/background/home.jpeg" ng-show="activePage == 'home'" style="width:100%; height: auto;"></img>
+				<img class="backgroundImage" src="images/background/industries.jpeg" ng-show="activePage == 'industries'" style="width:100%; height: auto;"></img>
+				<img class="backgroundImage" src="images/background/services.jpeg" ng-show="activePage == 'services'" style="width:100%; height: auto;"></img>
+				<img class="backgroundImage" src="images/background/about.jpeg" ng-show="activePage == 'about'" style="width:100%; height: auto;"></img>
+				<img class="backgroundImage" src="images/background/results.jpeg" ng-show="activePage == 'cases'" style="width:100%; height: auto;"></img>
+				<img class="backgroundImage" src="images/background/contact.jpeg" ng-show="activePage == 'contact'" style="width:100%; height: auto;"></img>
+				<img class="backgroundImage" src="images/cases/eviti.jpeg" ng-show="activePage == 'case_detail_0'" style="width:100%; height: auto;"></img>
+				<img class="backgroundImage" src="images/cases/ASCO.jpeg" ng-show="activePage == 'case_detail_1'" style="width:100%; height: auto;"></img>
+				<img class="backgroundImage" src="images/cases/clinical.jpeg" ng-show="activePage == 'case_detail_2'" style="width:100%; height: auto;"></img>
+				<img class="backgroundImage" src="images/cases/globalBio.jpeg" ng-show="activePage == 'case_detail_3'" style="width:100%; height: auto;"></img>
+				<img class="backgroundImage" src="images/background/bioPic.jpg" ng-show="activePage == 'bioPage'" style="width:100%; height: auto;"></img>
 
 			<div class="page-container clearfix" ng-hide="activePage == 'home'" ng-view=""></div>
 
