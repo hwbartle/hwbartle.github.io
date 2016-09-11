@@ -57,23 +57,23 @@
 				</a>
 
 				<ul class="navigation-list tablet-view" style="margin-bottom: 0px;">
-					<li><a href="#/home">Home</a></li>
-					<li><a href="#/about">About</a></li>
-					<li><a href="#/services">Services</a></li>
-					<li><a href="#/industries">Client Segments</a></li>
-					<li><a href="#/cases">Value Creation</a></li>
-					<li><a href="#/contact">Contact</a></li>
+					<li><a class="ng-scope" ng-class="{'active-nav-link' : activePage == 'home'}" href="#/home">Home</a></li>
+					<li><a ng-class="{'active-nav-link' : activePage == 'about'}" href="#/about">About</a></li>
+					<li><a ng-class="{'active-nav-link' : activePage == 'services'}" href="#/services">Services</a></li>
+					<li><a ng-class="{'active-nav-link' : activePage == 'industries'}" href="#/industries">Client Segments</a></li>
+					<li><a ng-class="{'active-nav-link' : activePage.indexOf('case') !== -1}" href="#/cases">Value Creation</a></li>
+					<li><a ng-class="{'active-nav-link' : activePage == 'contact'}" href="#/contact">Contact</a></li>
 
 				</ul>
 				<ul class="navigation-list mobile-view" style="margin-bottom: 0px;">
-					<li><a href="#/home">Home</a></li>
-					<li><a href="#/about">About</a></li>
-					<li><a href="#/industries">Client Segments</a></li>
+					<li><a ng-class="{'active-nav-link' : activePage == 'home'}" href="#/home">Home</a></li>
+					<li><a ng-class="{'active-nav-link' : activePage == 'about'}" href="#/about">About</a></li>
+					<li><a ng-class="{'active-nav-link' : activePage == 'industries'}" href="#/industries">Client Segments</a></li>
 				</ul>
 				<ul class="navigation-list mobile-view" style="margin-bottom: 0px;">
-					<li><a href="#/services">Services</a></li>
-					<li><a href="#/cases">Value Creation</a></li>
-					<li><a href="#/contact">Contact</a></li>
+					<li><a ng-class="{'active-nav-link' : activePage == 'services'}" href="#/services">Services</a></li>
+					<li><a ng-class="{'active-nav-link' : activePage.indexOf('case') !== -1}" href="#/cases">Value Creation</a></li>
+					<li><a ng-class="{'active-nav-link' : activePage == 'contact'}" href="#/contact">Contact</a></li>
 
 				</ul>
 			</div>

@@ -63,7 +63,7 @@ angular.module('beruffCompanyApp')
 });
 
 angular.module('beruffCompanyApp')
-.controller('IndustriesController', function ($scope, $rootScope) {
+.controller('IndustriesController', function ($scope, $rootScope, $window) {
 	$rootScope.subPage = "";
 	$rootScope.activePage = 'industries';
 	$scope.category = "companies";
@@ -79,7 +79,7 @@ angular.module('beruffCompanyApp')
 
 	  $scope.$watch('selected', function(select){
 	  	$scope.category = select.value;
-	  	if(/iPhone/.test(window.navigator.userAgent)){
+	  	if(/iPhone/.test($window.navigator.userAgent)){
 			$window.scrollTo(0,0)
 		}
 	  })
@@ -87,7 +87,7 @@ angular.module('beruffCompanyApp')
 
 });
 angular.module('beruffCompanyApp')
-.controller('ServicesController', function ($scope, $rootScope) {
+.controller('ServicesController', function ($scope, $rootScope, $window) {
 	$rootScope.activePage = 'services';
 	$rootScope.subPage = "";
 	$scope.category = "consult";
@@ -103,7 +103,7 @@ angular.module('beruffCompanyApp')
 
 	  $scope.$watch('selected', function(select){
 	  	$scope.category = select.value;
-	  	if(/iPhone/.test(window.navigator.userAgent)){
+	  	if(/iPhone/.test($window.navigator.userAgent)){
 			$window.scrollTo(0,0)
 		}
 	  })

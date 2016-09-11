@@ -150,6 +150,7 @@ select
 
 .navigation-list a:hover,
 .footer a:hover,
+.contact-link a:hover,
 .caseStudy_list a:link
 {
 	color:blue;
@@ -163,7 +164,8 @@ select
     color:black;
 }
 
-.contact-link a
+.contact-link a,
+.caseStudy_list a:visited
 {
 	text-decoration: none;
     color:black;
@@ -175,6 +177,27 @@ a.back-button
     color:black;
 }
 
+.caseStudy_list a:hover
+{
+	color:blue;
+}
+
+.active-nav-link
+{
+	font-weight: bold;
+}
+
+.mistakes-title
+{
+	margin-top:25px;
+	margin-bottom: 0;
+	font-size: 18px;
+}
+
+.mistakes-text
+{
+	margin-top:0;
+}
 /*
 body.current-page-home
 {
